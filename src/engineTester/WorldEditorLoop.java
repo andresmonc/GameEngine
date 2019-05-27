@@ -1,5 +1,6 @@
 package engineTester;
 
+import api.Save.Save;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
@@ -7,6 +8,7 @@ import entities.Player;
 import guis.GuiRenderer;
 import guis.GuiTexture;
 import models.TexturedModel;
+import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector2f;
 import org.lwjgl.util.vector.Vector3f;
@@ -140,7 +142,10 @@ public class WorldEditorLoop {
 
 
         /* Player */
-        Player player = new Player(playerModel, new Vector3f(100, 0, -50), 0, 180, 0, 0.6f);
+        Player player = (Player) Save.load();
+        if (player == null) {
+            player = new Player(playerModel, new Vector3f(100, 0, -50), 0, 180, 0, 0.6f);
+        }
 
         /* Camera */
         Camera camera = new Camera(player);
@@ -158,7 +163,7 @@ public class WorldEditorLoop {
             camera.move();
 
             player.move(terrain);
-
+            checkInputs(player);
             renderer.processEntity(player);
 
             renderer.processTerrain(terrain);
@@ -180,5 +185,13 @@ public class WorldEditorLoop {
         loader.cleanUp();
         DisplayManager.closeDisplay();
     }
+
+    private static void checkInputs(Player player) {
+        if (Keyboard.isKeyDown(Keyboard.KEY_LCONTROL) && Keyboard.isKeyDown(Keyboard.KEY_S)) {
+            Save.save(player);
+        }
+
+    }
+
 
 }

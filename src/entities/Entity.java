@@ -3,7 +3,9 @@ package entities;
 import models.TexturedModel;
 import org.lwjgl.util.vector.Vector3f;
 
-public class Entity {
+import java.io.Serializable;
+
+public class Entity implements Serializable {
 
 	private TexturedModel model;
 	private Vector3f position;

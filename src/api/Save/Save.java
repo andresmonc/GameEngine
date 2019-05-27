@@ -1,16 +1,16 @@
 package api.Save;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+
+import java.io.*;
 
 public class Save {
 
+    private static final String fileName = "save.bin";
 
     public static void save(Object object) {
 
 
-        String fileName = "data.bin";
+
         ObjectOutputStream os;
 
         System.out.println("Saving....");
@@ -23,8 +23,27 @@ public class Save {
                 e.printStackTrace();
             }
         }
-
         System.out.println("Save successful");
     }
+
+
+    public static Object load() {
+        Object result = null;
+        System.out.println("Loading...");
+        try {
+            ObjectInputStream is = new ObjectInputStream(new FileInputStream(fileName));
+            result = is.readObject();
+            is.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("No save files found. Starting new game...");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Load successful!");
+        return result;
+    }
+
 
 }

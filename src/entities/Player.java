@@ -1,5 +1,6 @@
 package entities;
 
+import api.Stats;
 import models.TexturedModel;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.util.vector.Vector3f;
@@ -14,7 +15,10 @@ public class Player extends Entity implements Serializable {
 	private static final float TURN_SPEED = 100; // degrees per second
 	private static final float GRAVITY = -50;
 	private static final float JUMP_POWER = 30;
+	private static final long serialVersionUID = 6529685098267757690L;
 
+
+	private Stats playerStats = new Stats(100, 10);
 
 	private float currentSpeed = 0;
 	private float currentTurnSpeed = 0;
