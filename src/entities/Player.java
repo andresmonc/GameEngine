@@ -6,7 +6,9 @@ import org.lwjgl.util.vector.Vector3f;
 import renderEngine.DisplayManager;
 import terrains.Terrain;
 
-public class Player extends Entity {
+import java.io.Serializable;
+
+public class Player extends Entity implements Serializable {
 
 	private static final float RUN_SPEED = 50;   // units per second
 	private static final float TURN_SPEED = 100; // degrees per second

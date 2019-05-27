@@ -133,7 +133,7 @@ public class MainGameLoop {
 		Light sun = new Light(new Vector3f(0, 10000, -7000), new Vector3f(2, 2, 2)); // light source // light color
 		List<Light> lights = new ArrayList<Light>();
 		lights.add(sun);
-		lights.add(new Light(new Vector3f(-200, 10, -200), new Vector3f(10, 0, 0)));
+		lights.add(new Light(new Vector3f(-200, 10, -200), new Vector3f(50, 0, 0)));
 		lights.add(new Light(new Vector3f(200, 10, 200), new Vector3f(0, 0, 10)));
 
 		MasterRenderer renderer = new MasterRenderer();
