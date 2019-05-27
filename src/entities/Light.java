@@ -5,10 +5,11 @@ import org.lwjgl.util.vector.Vector3f;
 public class Light {
 
 	private Vector3f position;
-	private Vector3f colour;
-	public Light(Vector3f position, Vector3f colour) {
+	private Vector3f color;
+
+	public Light(Vector3f position, Vector3f color) {
 		this.position = position;
-		this.colour = colour;
+		this.color = color;
 	}
 	public Vector3f getPosition() {
 		return position;
@@ -16,10 +17,12 @@ public class Light {
 	public void setPosition(Vector3f position) {
 		this.position = position;
 	}
-	public Vector3f getColour() {
-		return colour;
+
+	public Vector3f getColor() {
+		return color;
 	}
-	public void setColour(Vector3f colour) {
-		this.colour = colour;
+
+	public void setColor(Vector3f color) {
+		this.color = color;
 	}
 }

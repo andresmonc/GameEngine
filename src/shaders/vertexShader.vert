@@ -1,48 +1,57 @@
 #version 400 core
 
 in vec3 position;
-in vec2 textureCoordinates;
+in vec2 textureCoords;
 in vec3 normal;
 
-out vec2 pass_textureCoordinates;
+//out vec3 color;
+out vec2 pass_textureCoords;
 out vec3 surfaceNormal;
 out vec3 toLightVector[4];
 out vec3 toCameraVector;
 out float visibility;
 
-uniform mat4 transformationMatrix;	// the entity's position relative to the everything below
-uniform mat4 projectionMatrix;		// where the default location of everything is
-uniform mat4 viewMatrix;			// camera's perspective
-uniform vec3 lightPosition[4];// location of the light source (only one source of light so far)
+uniform mat4 transformationMatrix;//rotation and translation and matrix
+uniform mat4 projectionMatrix;//the frustum
+uniform mat4 viewMatrix;// position in respect to the world
+uniform vec3 lightPosition[4];
+
 uniform float useFakeLighting;
 
 uniform float numberOfRows;
 uniform vec2 offset;
 
-const float density = 0.0035;
-const float gradient = 5.0;
+const float density = 0.007f;//= 0.0035f; out in the distance fog // the amount of fog
+const float gradient = 1.5f;// =5.0f; out in the distance fog// how quickly visibility decreases with distance
 
-void main() {
+void main(void) {
 
-	vec4 worldPosition = transformationMatrix * vec4(position,1.0); // position is the position of the current vertex
+	/* Camera view */
+	vec4 worldPosition = transformationMatrix * vec4(position, 1.0f);
 	vec4 positionRelativeToCam = viewMatrix * worldPosition;
-	gl_Position = projectionMatrix * positionRelativeToCam;  	
-	pass_textureCoordinates = (textureCoordinates / numberOfRows) + offset;
-	
+	gl_Position = projectionMatrix * positionRelativeToCam;
+
+
+	/* Texture */
+	pass_textureCoords = (textureCoords/numberOfRows) + offset;// offset is from texture atlases tutorial 23
+
+	/* Normal */
 	vec3 actualNormal = normal;
-	if (useFakeLighting > 0.5){
-		actualNormal = vec3(0.0, 1.0, 0.0);
+
+	/* Grass Lighting */
+	if (useFakeLighting > 0.5) {
+		actualNormal = vec3(0.0f, 1.0f, 0.0f);// points directly up, for grass lighting
 	}
-	surfaceNormal = (transformationMatrix * vec4(actualNormal, 0.0)).xyz; //(swizzle it) convert from vec4 back to vec3
-	//vec3 lightPosition2 = (transformationMatrix * vec4(lightPosition, 0.0)).xyz; //this will make the light source travel with the entity
-	for (int i = 0;i < 4; i++){
+
+	/* Light */
+	surfaceNormal = (transformationMatrix * vec4(actualNormal, 0.0f)).xyz;
+	for (int i = 0; i < 4; ++i) {
 		toLightVector[i] = lightPosition[i] - worldPosition.xyz;
 	}
+	toCameraVector = (inverse(viewMatrix) * vec4(0.0f, 0.0f, 0.0f, 1.0f)).xyz - worldPosition.xyz;
 
-
-	toCameraVector = (inverse(viewMatrix) * vec4(0.0,0.0,0.0,1.0)).xyz - worldPosition.xyz;
-	
+	/* Fog */
 	float distance = length(positionRelativeToCam.xyz);
-	visibility = exp(-pow((distance*density), gradient));
-	visibility = clamp(visibility, 0.0, 1.0);
+	visibility = exp(-pow((distance*density), gradient));// fog forumla
+	visibility = clamp(visibility, 0.0f, 1.0f);
 }

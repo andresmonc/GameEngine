@@ -17,13 +17,15 @@ import java.util.List;
 import java.util.Map;
 
 public class MasterRenderer {
-	private static final float FOV = 70; // field of view angle
-	private static final float NEAR_PLANE = 0.1f;
-	private static final float FAR_PLANE = 1000;
 
-	private static final float RED = 154 / 255f;
-	private static final float GREEN = 198 / 255f;
-	private static final float BLUE = 194 / 255f;
+	private static final float FOV = 70;
+	private static final float NEAR_PLANE = 0.1f;
+	private static final float FAR_PLANE = 1000.0f;
+
+	// sky colors
+	private static final float RED = 0.5f;
+	private static final float GREEN = 0.5f;
+	private static final float BLUE = 0.5f;
 
 	private Matrix4f projectionMatrix;
 
@@ -33,20 +35,18 @@ public class MasterRenderer {
 	private TerrainRenderer terrainRenderer;
 	private TerrainShader terrainShader = new TerrainShader();
 
-
 	private Map<TexturedModel, List<Entity>> entities = new HashMap<TexturedModel, List<Entity>>();
 	private List<Terrain> terrains = new ArrayList<Terrain>();
 
 	public MasterRenderer() {
-		enableCulling();
 		createProjectionMatrix();
 		renderer = new EntityRenderer(shader, projectionMatrix);
 		terrainRenderer = new TerrainRenderer(terrainShader, projectionMatrix);
 	}
 
-	public static void enableCulling(){
-		GL11.glEnable(GL11.GL_CULL_FACE);
-		GL11.glCullFace(GL11.GL_BACK);
+	public static void enableCulling() {
+		GL11.glEnable(GL11.GL_CULL_FACE); // these two line optimize rendering performance
+		GL11.glCullFace(GL11.GL_BACK); // by not rendering the back of 3D objects that can not be seen from camera
 	}
 
 	public static void disableCulling() {
@@ -54,29 +54,32 @@ public class MasterRenderer {
 	}
 
 	public void render(List<Light> lights, Camera camera) {
+
 		prepare();
 
 		shader.start();
-		shader.loadSkyColour(RED, GREEN, BLUE);
+		shader.loadSkyColor(RED, GREEN, BLUE);
 		shader.loadLights(lights);
 		shader.loadViewMatrix(camera);
 		renderer.render(entities);
 		shader.stop();
 
 		terrainShader.start();
-		terrainShader.loadSkyColour(RED, GREEN, BLUE);
+		terrainShader.loadSkyColor(RED, GREEN, BLUE);
 		terrainShader.loadLights(lights);
 		terrainShader.loadViewMatrix(camera);
 		terrainRenderer.render(terrains);
 		terrainShader.stop();
+
 		terrains.clear();
 		entities.clear();
 	}
 
-	public void processTerrain(Terrain terrain){
+	public void processTerrain(Terrain terrain) {
 		terrains.add(terrain);
 	}
-	public void processEntity(Entity entity){
+
+	public void processEntity(Entity entity) {
 		TexturedModel entityModel = entity.getModel();
 		List<Entity> batch = entities.get(entityModel);
 		if (batch != null) {
@@ -88,7 +91,7 @@ public class MasterRenderer {
 		}
 	}
 
-	public void cleanUp(){
+	public void cleanUp() {
 		shader.cleanUp();
 		terrainShader.cleanUp();
 	}
@@ -98,6 +101,7 @@ public class MasterRenderer {
 		GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 		GL11.glClearColor(RED, GREEN, BLUE, 1);
 	}
+
 
 	private void createProjectionMatrix() {
 		float aspectRatio = (float) Display.getWidth() / (float) Display.getHeight();
@@ -112,5 +116,6 @@ public class MasterRenderer {
 		projectionMatrix.m23 = -1;
 		projectionMatrix.m32 = -((2 * NEAR_PLANE * FAR_PLANE) / frustum_length);
 		projectionMatrix.m33 = 0;
+
 	}
 }
