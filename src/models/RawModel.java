@@ -1,8 +1,8 @@
 package models;
 
 public class RawModel {
-	
-	private int vaoID;
+
+    private int vaoID;
 	private int vertexCount;
 	
 	public RawModel(int vaoID, int vertexCount){
@@ -18,6 +18,4 @@ public class RawModel {
 		return vertexCount;
 	}
 	
-	
-
 }

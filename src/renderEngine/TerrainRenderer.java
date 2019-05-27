@@ -1,21 +1,18 @@
 package renderEngine;
 
-import java.util.List;
-
 import models.RawModel;
-
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL13;
 import org.lwjgl.opengl.GL20;
 import org.lwjgl.opengl.GL30;
 import org.lwjgl.util.vector.Matrix4f;
 import org.lwjgl.util.vector.Vector3f;
-
 import shaders.TerrainShader;
 import terrains.Terrain;
-import textures.ModelTexture;
 import textures.TerrainTexturePack;
 import toolbox.Maths;
+
+import java.util.List;
 
 public class TerrainRenderer {
 
@@ -34,18 +31,19 @@ public class TerrainRenderer {
 			prepareTerrain(terrain);
 			loadModelMatrix(terrain);
 			GL11.glDrawElements(GL11.GL_TRIANGLES, terrain.getModel().getVertexCount(), GL11.GL_UNSIGNED_INT, 0);
-			unbindTexturedModel();
+			unbindTerrain();
 		}
 	}
 
 	private void prepareTerrain(Terrain terrain) {
 		RawModel rawModel = terrain.getModel();
 		GL30.glBindVertexArray(rawModel.getVaoID());
-		GL20.glEnableVertexAttribArray(0);
-		GL20.glEnableVertexAttribArray(1);
-		GL20.glEnableVertexAttribArray(2);
+		GL20.glEnableVertexAttribArray(0); // position
+		GL20.glEnableVertexAttribArray(1); // textureCoordinates
+		GL20.glEnableVertexAttribArray(2); // normal
 		bindTextures(terrain);
 		shader.loadShineVariables(1, 0);
+
 	}
 
 	private void bindTextures(Terrain terrain) {
@@ -62,7 +60,7 @@ public class TerrainRenderer {
 		GL11.glBindTexture(GL11.GL_TEXTURE_2D, terrain.getBlendMap().getTextureID());
 	}
 
-	private void unbindTexturedModel() {
+	private void unbindTerrain() {
 		GL20.glDisableVertexAttribArray(0);
 		GL20.glDisableVertexAttribArray(1);
 		GL20.glDisableVertexAttribArray(2);
@@ -70,8 +68,8 @@ public class TerrainRenderer {
 	}
 
 	private void loadModelMatrix(Terrain terrain) {
-		Matrix4f transformationMatrix = Maths.createTransformationMatrix(new Vector3f(terrain.getX(), 0, terrain.getZ()), 0, 0, 0, 1);
+		Matrix4f transformationMatrix = Maths.createTransformationMatrix(
+				new Vector3f(terrain.getX(), 0, terrain.getZ()), 0, 0, 0, 1); // do not rotate your terrains!
 		shader.loadTransformationMatrix(transformationMatrix);
 	}
-
 }
