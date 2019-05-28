@@ -6,7 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6fa1f9-d4c8-4350-80a7-61ae34d3695f" name="Default Changelist" comment="" />
+    <list default="true" id="ae6fa1f9-d4c8-4350-80a7-61ae34d3695f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/PNGDecoder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Skybox Images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Skybox Images/bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Skybox Images/front.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Skybox Images/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Skybox Images/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Skybox Images/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textures/TextureData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderEngine/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Loader.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +70,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="165">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/textures/TextureData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+              <folding>
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderEngine/Loader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/guis/guiFragmentShader.txt" />
         <option value="$PROJECT_DIR$/src/guis/GuiRenderer.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/DisplayManager.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/Loader.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/EntityRenderer.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/TerrainRenderer.java" />
@@ -177,6 +216,8 @@
         <option value="$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java" />
         <option value="$PROJECT_DIR$/src/entities/Player.java" />
         <option value="$PROJECT_DIR$/src/entities/Camera.java" />
+        <option value="$PROJECT_DIR$/src/textures/TextureData.java" />
+        <option value="$PROJECT_DIR$/src/renderEngine/Loader.java" />
       </list>
     </option>
   </component>
@@ -206,42 +247,13 @@
             <path>
               <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="jars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="engineTester" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="renderEngine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="shaders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,7 +264,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555463131348" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jars/PNGDecoder.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -265,11 +277,11 @@
       <recent name="api.Save" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res" />
+      <recent name="$PROJECT_DIR$/lib/jars" />
       <recent name="$PROJECT_DIR$/src/toolbox" />
       <recent name="$PROJECT_DIR$/src/textures" />
       <recent name="$PROJECT_DIR$/src/terrains" />
-      <recent name="$PROJECT_DIR$/src/shaders" />
-      <recent name="$PROJECT_DIR$/src/renderEngine" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,11 +437,19 @@
       <option name="project" value="LOCAL" />
       <updated>1559004665960</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added pngdecoder.jar&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
+      <created>1559005245155</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1559005245155</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="2490" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -444,7 +464,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49590835" weight="0.3304253" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49918166" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.492635" visible="true" weight="0.30861506" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.492635" weight="0.30861506" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -482,19 +502,13 @@
     <MESSAGE value="Fully implemented saving and loading of player locations and stats.&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <MESSAGE value="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <MESSAGE value="reorganized some files&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganized some files&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
+    <MESSAGE value="added pngdecoder.jar&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pngdecoder.jar&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/textures/TerrainTexture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/textures/TerrainTexturePack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -622,20 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-          <folding>
-            <element signature="e#523#532#0" expanded="true" />
-            <element signature="e#579#588#0" expanded="true" />
-            <element signature="e#639#648#0" expanded="true" />
-            <element signature="e#2680#2681#0" expanded="true" />
-            <element signature="e#2712#2713#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,10 +888,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="165">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderEngine/Loader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/textures/TextureData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -907,6 +932,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -961,7 +987,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>natives</last-edited>
+          <last-edited>PNGDecoder</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
