@@ -7,24 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae6fa1f9-d4c8-4350-80a7-61ae34d3695f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/entities/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/models/RawModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/models/RawModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/models/TexturedModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/models/TexturedModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/textures/ModelTexture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/textures/ModelTexture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/fern.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/fern.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/heightmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/heightmap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/stall.obj" beforeDir="false" afterPath="$PROJECT_DIR$/res/stall.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/white.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Save/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Save/Save.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Light.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/TerrainShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/TerrainShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/fragmentShader.frag" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/fragmentShader.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/terrainFragmentShader.frag" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/terrainFragmentShader.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Journal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Quest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questSystem/Journal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questSystem/Quest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -251,6 +237,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shaders" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="questSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -419,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559000148732</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
+      <created>1559004445397</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559004445397</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -435,10 +434,10 @@
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49918166" weight="0.32824427" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5040917" side_tool="true" weight="0.3304253" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49509" weight="0.32388222" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49590835" weight="0.3304253" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49590835" visible="true" weight="0.3304253" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49918166" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.492635" visible="true" weight="0.30861506" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.492635" weight="0.30861506" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -474,14 +473,13 @@
     <MESSAGE value="multiple light sources working;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <MESSAGE value="working on saving feature; created a simple monster class&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <MESSAGE value="Fully implemented saving and loading of player locations and stats.&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully implemented saving and loading of player locations and stats.&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
+    <MESSAGE value="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/objConverter/Vertex.java" />
-    <entry file="file://$PROJECT_DIR$/src/objConverter/OBJFileLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/textures/TerrainTexture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -863,6 +861,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Quest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Journal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
