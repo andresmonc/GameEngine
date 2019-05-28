@@ -5,7 +5,7 @@ import java.io.*;
 
 public class Save {
 
-    private static final String fileName = "save.bin";
+    private static final String fileName = "./res/save.bin";
 
     public static void save(Object object) {
 
