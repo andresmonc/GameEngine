@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6fa1f9-d4c8-4350-80a7-61ae34d3695f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Journal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Quest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/questSystem/Journal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/questSystem/Quest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ae6fa1f9-d4c8-4350-80a7-61ae34d3695f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,6 +206,17 @@
             <path>
               <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="jars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -237,12 +243,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shaders" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="questSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -252,8 +252,8 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555463131348" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/toolbox" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jars/PNGDecoder.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -418,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559004445397</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="reorganized some files&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
+      <created>1559004665960</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559004665960</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -434,10 +441,10 @@
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49918166" weight="0.32824427" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5040917" side_tool="true" weight="0.3304253" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49509" weight="0.32388222" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49590835" visible="true" weight="0.3304253" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49590835" weight="0.3304253" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49918166" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.492635" weight="0.30861506" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.492635" visible="true" weight="0.30861506" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -474,7 +481,8 @@
     <MESSAGE value="working on saving feature; created a simple monster class&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <MESSAGE value="Fully implemented saving and loading of player locations and stats.&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <MESSAGE value="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
+    <MESSAGE value="reorganized some files&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganized some files&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -864,14 +872,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Quest.java">
+    <entry file="file://$PROJECT_DIR$/src/worldSystems/questSystem/Quest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WorldSystems/questSystem/questSystem/Journal.java">
+    <entry file="file://$PROJECT_DIR$/src/worldSystems/questSystem/Journal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
@@ -880,8 +888,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
