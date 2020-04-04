@@ -1,9 +1,12 @@
 package engineTester;
 
+import NPCEngine.NPCEngine;
 import api.Save.Save;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
+import entities.NPC.NPC;
+import entities.NPC.Werewolf;
 import entities.Player;
 import guis.GuiRenderer;
 import guis.GuiTexture;
@@ -89,7 +92,7 @@ public class WorldEditorLoop {
 
         /* Terrain */
         Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap");    // darker the spot the lower the spot
-        //Terrain terrain2 = new Terrain(-1,-1, loader, texturePack, blendMap, "heightmap");
+        Terrain terrain2 = new Terrain(-1,-1, loader, texturePack, blendMap, "heightmap");
 
 
 
@@ -162,10 +165,20 @@ public class WorldEditorLoop {
             player = new Player(playerModel, new Vector3f(100, 0, -50), 0, 180, 0, 0.6f);
         }
 
+
+
         /* Camera */
         Camera camera = new Camera(player);
 
-
+        /* NPCs */
+        NPCEngine npcEngine = new NPCEngine();
+        //Werewolf
+        Werewolf werewolf = new Werewolf(playerModel,new Vector3f(100, 0, -50), 0, 180, 0, 2.6f);
+        Werewolf werewolf2 = new Werewolf(playerModel,new Vector3f(100, 0, -80), 0, 180, 0, 2.6f);
+        Werewolf werewolf3 = new Werewolf(playerModel,new Vector3f(100, 0, -10), 0, 180, 0, 2.6f);
+        npcEngine.addNpc(werewolf);
+        npcEngine.addNpc(werewolf2);
+        npcEngine.addNpc(werewolf3);
 
         /* GUI */
         List<GuiTexture> guis = new ArrayList<GuiTexture>();
@@ -181,8 +194,17 @@ public class WorldEditorLoop {
             checkInputs(player);
             renderer.processEntity(player);
 
+            // NPC movement and entity processing
+            npcEngine.getNpcList().forEach(npc -> {
+                npc.move(terrain);
+                npcEngine.beginRandomizedMovement();
+                renderer.processEntity(npc);
+            });
+
+
+
             renderer.processTerrain(terrain);
-            //renderer.processTerrain(terrain2);
+            renderer.processTerrain(terrain2);
 
             for (Entity entity : entities) {
 
@@ -204,6 +226,10 @@ public class WorldEditorLoop {
     private static void checkInputs(Player player) {
         if (Keyboard.isKeyDown(Keyboard.KEY_LCONTROL) && Keyboard.isKeyDown(Keyboard.KEY_S)) {
             Save.save(player);
+            System.out.println("Current pos:");
+            System.out.println("x:" + player.getPosition().x);
+            System.out.println("y:" + player.getPosition().y);
+            System.out.println("z:" + player.getPosition().z);
         }
 
     }

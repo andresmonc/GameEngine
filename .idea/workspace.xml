@@ -2,35 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="562087be-1e93-42af-a410-ee9c69213216" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/GameEngine.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jars.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GameEngine_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jaime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/PNGDecoder.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lwjgl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/natives.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NPCEngine/NPCEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GameEngine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/engineTester/MainGameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/engineTester/MainGameLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/entities/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/andresmonc/GameEngine.git" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1a5ZDq5uJ83SU5oU6pcg44dUbjp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jars/slick-util.jar!/" />
@@ -39,7 +51,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.WorldEditorLoop">
     <configuration name="MainGameLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engineTester.MainGameLoop" />
       <module name="GameEngine" />
@@ -54,8 +66,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WorldEditorLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="engineTester.WorldEditorLoop" />
+      <module name="GameEngine" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=lib/natives" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="engineTester.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainGameLoop" />
+      <item itemvalue="Application.WorldEditorLoop" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WorldEditorLoop" />
         <item itemvalue="Application.MainGameLoop" />
       </list>
     </recent_temporary>
@@ -71,40 +102,100 @@
       <option name="presentableId" value="Default" />
       <updated>1586027298904</updated>
     </task>
+    <task id="LOCAL-00001" summary="updated intellij settings">
+      <created>1586028028454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586028028455</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated gitignore">
+      <created>1586030445595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586030445596</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implemented NPCs with movable interface to control movement">
+      <created>1586030483588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586030483588</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated intellij settings" />
+    <MESSAGE value="updated gitignore" />
+    <MESSAGE value="implemented NPCs with movable interface to control movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented NPCs with movable interface to control movement" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="779" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586027807441">
+    <state x="779" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586029227331">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
-    <state x="779" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027807441" />
+    <state x="779" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586029227331" />
+    <state x="1129" y="240" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1586031523375">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="1129" y="240" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586031523375" />
+    <state x="927" y="130" width="777" height="854" key="CommitChangelistDialog2" timestamp="1586030483509">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="927" y="130" width="777" height="854" key="CommitChangelistDialog2/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586030483509" />
+    <state x="320" y="121" width="1982" height="879" key="DiffContextDialog" timestamp="1586028045642">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="320" y="121" width="1982" height="879" key="DiffContextDialog/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586028045642" />
     <state x="948" y="300" width="735" height="527" key="FileChooserDialogImpl" timestamp="1586027600274">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
     <state x="948" y="300" width="735" height="527" key="FileChooserDialogImpl/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027600274" />
-    <state width="2432" height="275" key="GridCell.Tab.0.bottom" timestamp="1586027910696">
+    <state width="2432" height="275" key="GridCell.Tab.0.bottom" timestamp="1586031811227">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
-    <state width="2432" height="275" key="GridCell.Tab.0.bottom/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
-    <state width="2432" height="275" key="GridCell.Tab.0.center" timestamp="1586027910696">
+    <state width="2432" height="275" key="GridCell.Tab.0.bottom/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586031811227" />
+    <state width="2432" height="275" key="GridCell.Tab.0.center" timestamp="1586031811226">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
-    <state width="2432" height="275" key="GridCell.Tab.0.center/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
-    <state width="2432" height="275" key="GridCell.Tab.0.left" timestamp="1586027910696">
+    <state width="2432" height="275" key="GridCell.Tab.0.center/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586031811226" />
+    <state width="2432" height="275" key="GridCell.Tab.0.left" timestamp="1586031811226">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
-    <state width="2432" height="275" key="GridCell.Tab.0.left/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
-    <state width="2432" height="275" key="GridCell.Tab.0.right" timestamp="1586027910696">
+    <state width="2432" height="275" key="GridCell.Tab.0.left/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586031811226" />
+    <state width="2432" height="275" key="GridCell.Tab.0.right" timestamp="1586031811226">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
-    <state width="2432" height="275" key="GridCell.Tab.0.right/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
+    <state width="2432" height="275" key="GridCell.Tab.0.right/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586031811226" />
+    <state width="2432" height="340" key="GridCell.Tab.1.bottom" timestamp="1586029252870">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="340" key="GridCell.Tab.1.bottom/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586029252870" />
+    <state width="2432" height="340" key="GridCell.Tab.1.center" timestamp="1586029252870">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="340" key="GridCell.Tab.1.center/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586029252870" />
+    <state width="2432" height="340" key="GridCell.Tab.1.left" timestamp="1586029252870">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="340" key="GridCell.Tab.1.left/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586029252870" />
+    <state width="2432" height="340" key="GridCell.Tab.1.right" timestamp="1586029252870">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="340" key="GridCell.Tab.1.right/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586029252870" />
     <state x="1210" y="174" width="1022" height="737" key="SettingsEditor" timestamp="1586027761970">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
     <state x="1210" y="174" width="1022" height="737" key="SettingsEditor/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027761970" />
-    <state x="966" y="292" width="710" height="522" key="find.popup" timestamp="1586027502468">
+    <state x="916" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586030485396">
       <screen x="82" y="27" width="2478" height="1053" />
     </state>
-    <state x="966" y="292" width="710" height="522" key="find.popup/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027502468" />
+    <state x="916" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586030485396" />
+    <state x="966" y="292" width="1161" height="660" key="find.popup" timestamp="1586029359830">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="966" y="292" width="1161" height="660" key="find.popup/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586029359830" />
   </component>
 </project>
