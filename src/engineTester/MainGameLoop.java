@@ -3,6 +3,7 @@ package engineTester;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
+import entities.NPC.Werewolf;
 import entities.Player;
 import guis.GuiRenderer;
 import guis.GuiTexture;
@@ -153,6 +154,7 @@ public class MainGameLoop {
 
 		/* Player */
 		Player player = new Player(playerModel, new Vector3f(100, 0, -50), 0, 180, 0, 0.6f);
+
 
 		/* Camera */
 		Camera camera = new Camera(player);

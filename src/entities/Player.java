@@ -17,9 +17,6 @@ public class Player extends Entity implements Serializable {
 	private static final float JUMP_POWER = 30;
 	private static final long serialVersionUID = 6529685098267757690L;
 
-
-	private Stats playerStats = new Stats(100, 10);
-
 	private float currentSpeed = 0;
 	private float currentTurnSpeed = 0;
 	private float upwardsSpeed = 0;
@@ -28,6 +25,8 @@ public class Player extends Entity implements Serializable {
 
 	public Player(TexturedModel model, Vector3f position, float rotX, float rotY, float rotZ, float scale) {
 		super(model, position, rotX, rotY, rotZ, scale);
+		setHealth(100);
+		setDamage(10);
 	}
 
 	public void move(Terrain terrain) {
