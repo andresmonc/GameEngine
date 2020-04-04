@@ -1,6 +1,7 @@
 package engineTester;
 
 import NPCEngine.NPCEngine;
+import api.Save.AutoSave;
 import api.Save.Save;
 import entities.Camera;
 import entities.Entity;
@@ -180,6 +181,8 @@ public class WorldEditorLoop {
         npcEngine.addNpc(werewolf2);
         npcEngine.addNpc(werewolf3);
 
+        /* AutoSaver */
+        AutoSave autoSave = new AutoSave();
         /* GUI */
         List<GuiTexture> guis = new ArrayList<GuiTexture>();
         GuiTexture gui = new GuiTexture(loader.loadTexture("health"), new Vector2f(-0.7f, -0.85f), new Vector2f(0.20f, 0.25f));
@@ -201,7 +204,7 @@ public class WorldEditorLoop {
                 renderer.processEntity(npc);
             });
 
-
+            autoSave.autoSave(player);
 
             renderer.processTerrain(terrain);
             renderer.processTerrain(terrain2);
@@ -223,6 +226,7 @@ public class WorldEditorLoop {
         DisplayManager.closeDisplay();
     }
 
+    // this will handle manual saves for now
     private static void checkInputs(Player player) {
         if (Keyboard.isKeyDown(Keyboard.KEY_LCONTROL) && Keyboard.isKeyDown(Keyboard.KEY_S)) {
             Save.save(player);

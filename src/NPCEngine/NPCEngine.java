@@ -19,9 +19,13 @@ public class NPCEngine {
 
     public void beginRandomizedMovement(){
         npcList.forEach(npc -> {
-            npc.setCurrentSpeed(50);
-            npc.setCurrentTurnSpeed(140);
+            npc.setCurrentSpeed(10);
+            npc.setCurrentTurnSpeed(randomInt());
         });
+    }
+
+    private int randomInt(){
+        return (int) (Math.random() * 100 + 1);
     }
 
 }

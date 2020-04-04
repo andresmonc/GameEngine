@@ -8,11 +8,7 @@ public class Save {
     private static final String fileName = "./res/save.bin";
 
     public static void save(Object object) {
-
-
-
         ObjectOutputStream os;
-
         System.out.println("Saving....");
         {
             try {
