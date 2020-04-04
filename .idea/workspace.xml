@@ -1,321 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="GameEngine:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6fa1f9-d4c8-4350-80a7-61ae34d3695f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/PNGDecoder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Skybox Images/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Skybox Images/bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Skybox Images/front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Skybox Images/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Skybox Images/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Skybox Images/top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/textures/TextureData.java" afterDir="false" />
+    <list default="true" id="562087be-1e93-42af-a410-ee9c69213216" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/GameEngine.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jars.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GameEngine_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jaime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/PNGDecoder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lwjgl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/natives.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GameEngine.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2446#2447#0" expanded="true" />
-                <element signature="e#2517#2518#0" expanded="true" />
-                <element signature="e#2576#2577#0" expanded="true" />
-                <element signature="e#2650#2651#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shaders/TerrainShader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="60" column="51" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/textures/TextureData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-              <folding>
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderEngine/Loader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>.vert</find>
-      <find>txt</find>
-      <find>loader</find>
-      <find>int verte</find>
-      <find>terrainTex</find>
-      <find>return blend</find>
-      <find>float y</find>
-      <find>for</find>
-      <find>for1</find>
-      <find>grass</find>
-      <find>colli</find>
-      <find>objfile</find>
-      <find>ModelTexture</find>
-      <find>fern</find>
-      <find>increase</find>
-      <find>diffuse</find>
-      <find>light</find>
-      <find>colour</find>
-      <find>olor</find>
-      <find>staticShad</find>
-      <find>loadSky</find>
-      <find>playter</find>
-      <find>stat</find>
-      <find>static</find>
-      <find>Player player</find>
-      <find>player</find>
-      <find>process</find>
-      <find>totaleDif</find>
-      <find>atten</find>
-      <find>tolight</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Jaime Moncayo" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/engineTester/mainGameLoop.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/RawModel.java" />
-        <option value="$PROJECT_DIR$/src/shaders/vertexShader.txt" />
-        <option value="$PROJECT_DIR$/src/renderEngine/Renderer.java" />
-        <option value="$PROJECT_DIR$/src/objConverter/OBJFileLoader.java" />
-        <option value="$PROJECT_DIR$/src/textures/TerrainTexture.java" />
-        <option value="$PROJECT_DIR$/src/textures/TerrainTexturePack.java" />
-        <option value="$PROJECT_DIR$/src/worldEditor/SavedEntitiesLoader.java" />
-        <option value="$PROJECT_DIR$/src/terrains/Terrain.java" />
-        <option value="$PROJECT_DIR$/src/api/ISaveable.java" />
-        <option value="$PROJECT_DIR$/src/GUIs/GuiTexture.java" />
-        <option value="$PROJECT_DIR$/src/GUIs/GuiRenderer.java" />
-        <option value="$PROJECT_DIR$/src/toolbox/Maths.java" />
-        <option value="$PROJECT_DIR$/src/guis/guiFragmentShader.txt" />
-        <option value="$PROJECT_DIR$/src/guis/GuiRenderer.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/DisplayManager.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/EntityRenderer.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/TerrainRenderer.java" />
-        <option value="$PROJECT_DIR$/src/shaders/fragmentShader.txt" />
-        <option value="$PROJECT_DIR$/src/shaders/fragmentShader.vert" />
-        <option value="$PROJECT_DIR$/src/shaders/terrainFragmentShader.vert" />
-        <option value="$PROJECT_DIR$/src/shaders/terrainVertexShader.vert" />
-        <option value="$PROJECT_DIR$/src/shaders/vertexShader.vert" />
-        <option value="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" />
-        <option value="$PROJECT_DIR$/src/shaders/ShaderProgram.java" />
-        <option value="$PROJECT_DIR$/src/api/AutoSave.java" />
-        <option value="$PROJECT_DIR$/src/api/Save/AutoSave.java" />
-        <option value="$PROJECT_DIR$/src/api/Save/Monster.java" />
-        <option value="$PROJECT_DIR$/src/entities/Monster.java" />
-        <option value="$PROJECT_DIR$/src/engineTester/Save.java" />
-        <option value="$PROJECT_DIR$/src/engineTester/Person.java" />
-        <option value="$PROJECT_DIR$/src/engineTester/Monster.java" />
-        <option value="$PROJECT_DIR$/src/engineTester/ComponentTester.java" />
-        <option value="$PROJECT_DIR$/src/api/Stats.java" />
-        <option value="$PROJECT_DIR$/src/entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/models/TexturedModel.java" />
-        <option value="$PROJECT_DIR$/src/models/RawModel.java" />
-        <option value="$PROJECT_DIR$/src/textures/ModelTexture.java" />
-        <option value="$PROJECT_DIR$/src/api/Save/Save.java" />
-        <option value="$PROJECT_DIR$/src/entities/Light.java" />
-        <option value="$PROJECT_DIR$/src/shaders/fragmentShader.frag" />
-        <option value="$PROJECT_DIR$/src/shaders/StaticShader.java" />
-        <option value="$PROJECT_DIR$/src/shaders/terrainFragmentShader.frag" />
-        <option value="$PROJECT_DIR$/src/shaders/TerrainShader.java" />
-        <option value="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" />
-        <option value="$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java" />
-        <option value="$PROJECT_DIR$/src/entities/Player.java" />
-        <option value="$PROJECT_DIR$/src/entities/Camera.java" />
-        <option value="$PROJECT_DIR$/src/textures/TextureData.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/Loader.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="118" />
-    <option name="y" value="191" />
-    <option name="width" value="1702" />
-    <option name="height" value="789" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="renderEngine" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1a5ZDq5uJ83SU5oU6pcg44dUbjp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555463131348" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jars/slick-util.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="engineTester" />
-      <recent name="api.Save" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res" />
-      <recent name="$PROJECT_DIR$/lib/jars" />
-      <recent name="$PROJECT_DIR$/src/toolbox" />
-      <recent name="$PROJECT_DIR$/src/textures" />
-      <recent name="$PROJECT_DIR$/src/terrains" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.WorldEditor">
-    <configuration name="ComponentTester" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="engineTester.ComponentTester" />
-      <module name="GameEngine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.Save.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainGameLoop" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="MainGameLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engineTester.MainGameLoop" />
       <module name="GameEngine" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=lib/natives" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.Save.*" />
+          <option name="PATTERN" value="engineTester.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,680 +54,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorldEditor" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="engineTester.WorldEditorLoop" />
-      <module name="GameEngine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.Save.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.MainGameLoop" />
-      <item itemvalue="Application.WorldEditor" />
-      <item itemvalue="Application.ComponentTester" />
-    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainGameLoop" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae6fa1f9-d4c8-4350-80a7-61ae34d3695f" name="Default Changelist" comment="" />
-      <created>1551045502078</created>
+      <changelist id="562087be-1e93-42af-a410-ee9c69213216" name="Default Changelist" comment="" />
+      <created>1586027298904</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551045502078</updated>
+      <updated>1586027298904</updated>
     </task>
-    <task id="LOCAL-00001" summary="converted from txt to vert">
-      <created>1552274342088</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1552274342088</updated>
-    </task>
-    <task id="LOCAL-00002" summary="converted from txt to vert">
-      <created>1552274472510</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1552274472510</updated>
-    </task>
-    <task id="LOCAL-00003" summary="converted from txt to vert">
-      <created>1552274527916</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1552274527916</updated>
-    </task>
-    <task id="LOCAL-00004" summary="bug fixes; limited pitch to 0">
-      <created>1558980751388</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1558980751389</updated>
-    </task>
-    <task id="LOCAL-00005" summary="bug fixes; limited pitch to 0&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1558980981476</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1558980981476</updated>
-    </task>
-    <task id="LOCAL-00006" summary="working on adding multiple light sources; need to modify the terrain rendering for light;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1558983152810</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1558983152810</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fixed terrain vertex shader and terrain fragment shader; need to fix TerrainShader&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1558983591608</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1558983591608</updated>
-    </task>
-    <task id="LOCAL-00008" summary="multiple light sources working;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1558987035348</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1558987035348</updated>
-    </task>
-    <task id="LOCAL-00009" summary="working on saving feature; created a simple monster class&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1558989870696</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1558989870696</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fully implemented saving and loading of player locations and stats.&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1559000148731</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1559000148732</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1559004445397</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1559004445397</updated>
-    </task>
-    <task id="LOCAL-00012" summary="reorganized some files&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1559004665960</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1559004665960</updated>
-    </task>
-    <task id="LOCAL-00013" summary="added pngdecoder.jar&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;">
-      <created>1559005245155</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1559005245155</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="70" y="27" width="2490" height="1053" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12806875" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49918166" weight="0.32824427" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5040917" side_tool="true" weight="0.3304253" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49509" weight="0.32388222" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49590835" weight="0.3304253" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49918166" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.492635" weight="0.30861506" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.3992629" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="8" />
-    </layout>
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="converted from txt to vert" />
-    <MESSAGE value="bug fixes; limited pitch to 0" />
-    <MESSAGE value="bug fixes; limited pitch to 0&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="working on adding multiple light sources; need to modify the terrain rendering for light;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="fixed terrain vertex shader and terrain fragment shader; need to fix TerrainShader&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="multiple light sources working;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="working on saving feature; created a simple monster class&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="Fully implemented saving and loading of player locations and stats.&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="Working point lighting; added placeholder questSystem classes Journal and quest; a journal will have quests;&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="reorganized some files&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <MESSAGE value="added pngdecoder.jar&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pngdecoder.jar&#10;&#10;Signed-off-by: andresmonc &lt;jaimeandresmonc@gmail.com&gt;" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/textures/TerrainTexturePack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.12.0-openjdk-amd64!/java.base/java/lang/ClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jars/lwjgl.jar!/org/lwjgl/opengl/Display.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="892" selection-start-line="892" selection-end-line="892" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/ISaveable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guis/GuiTexture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolbox/Vertex.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolbox/Maths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worldEditor/testLevel.txt" />
-    <entry file="file://$PROJECT_DIR$/src/guis/guiFragmentShader.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jars/lwjgl.jar!/org/lwjgl/opengl/GL11.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="79" column="51" lean-forward="true" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guis/GuiRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="30" column="39" lean-forward="true" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/ModelData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/DisplayManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/OBJFileLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/worldEditor/SavedEntitiesLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/terrains/Terrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/imageio/ImageIO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6870">
-          <caret line="494" selection-start-line="494" selection-end-line="494" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/EntityRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/TerrainRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/terrainVertexShader.vert">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/vertexShader.vert">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/Save/Monster.java" />
-    <entry file="file://$PROJECT_DIR$/src/entities/Monster.java" />
-    <entry file="file://$PROJECT_DIR$/src/api/Save/AutoSave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data2.bin">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engineTester/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engineTester/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="65" />
-          <folding>
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engineTester/ComponentTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/MasterRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.bin">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/RawModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/textures/ModelTexture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/OBJLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/TexturedModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/Stats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/Save/Save.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Light.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="e#513#514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/ShaderProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/fragmentShader.frag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="41" column="79" lean-forward="true" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="190" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/terrainFragmentShader.frag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="73" column="208" selection-start-line="73" selection-start-column="208" selection-end-line="73" selection-end-column="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2517#2518#0" expanded="true" />
-            <element signature="e#2576#2577#0" expanded="true" />
-            <element signature="e#2650#2651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/TerrainShader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="60" column="51" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="79" column="42" lean-forward="true" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldSystems/questSystem/Quest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldSystems/questSystem/Journal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engineTester/WorldEditorLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/textures/TextureData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>GameEngine:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>GameEngine</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>PNGDecoder</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="779" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586027807441">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="779" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027807441" />
+    <state x="948" y="300" width="735" height="527" key="FileChooserDialogImpl" timestamp="1586027600274">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="948" y="300" width="735" height="527" key="FileChooserDialogImpl/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027600274" />
+    <state width="2432" height="275" key="GridCell.Tab.0.bottom" timestamp="1586027910696">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="275" key="GridCell.Tab.0.bottom/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
+    <state width="2432" height="275" key="GridCell.Tab.0.center" timestamp="1586027910696">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="275" key="GridCell.Tab.0.center/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
+    <state width="2432" height="275" key="GridCell.Tab.0.left" timestamp="1586027910696">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="275" key="GridCell.Tab.0.left/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
+    <state width="2432" height="275" key="GridCell.Tab.0.right" timestamp="1586027910696">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state width="2432" height="275" key="GridCell.Tab.0.right/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027910696" />
+    <state x="1210" y="174" width="1022" height="737" key="SettingsEditor" timestamp="1586027761970">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="1210" y="174" width="1022" height="737" key="SettingsEditor/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027761970" />
+    <state x="966" y="292" width="710" height="522" key="find.popup" timestamp="1586027502468">
+      <screen x="82" y="27" width="2478" height="1053" />
+    </state>
+    <state x="966" y="292" width="710" height="522" key="find.popup/82.27.2478.1053/2560.0.1920.1080@82.27.2478.1053" timestamp="1586027502468" />
   </component>
 </project>
