@@ -9,7 +9,7 @@ import terrains.Terrain;
 
 import java.io.Serializable;
 
-public class Player extends Entity implements Serializable {
+public class Player extends Entity {
 
 	private static final float RUN_SPEED = 50;   // units per second
 	private static final float TURN_SPEED = 100; // degrees per second
