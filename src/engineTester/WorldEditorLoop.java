@@ -6,13 +6,13 @@ import api.Save.Save;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
-import entities.NPC.NPC;
 import entities.NPC.Werewolf;
 import entities.Player;
 import guis.GuiRenderer;
 import guis.GuiTexture;
 import models.TexturedModel;
 import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector2f;
 import org.lwjgl.util.vector.Vector3f;
@@ -24,6 +24,7 @@ import terrains.Terrain;
 import textures.ModelTexture;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
+import toolbox.MousePicker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,14 +94,14 @@ public class WorldEditorLoop {
 
         /* Terrain */
         Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap");    // darker the spot the lower the spot
-        Terrain terrain2 = new Terrain(-1,-1, loader, texturePack, blendMap, "heightmap");
+        Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap, "heightmap");
 
 
 
 
         /* Create entities */
         Random random = new Random();
-        List<Entity> entities = new ArrayList<Entity>();
+        List<Entity> entities = new ArrayList<>();
         for (int i = 0; i < 400; ++i) {
             if (i % 2 == 0) {
                 float x = random.nextFloat() * 800 - 400;
@@ -142,9 +143,8 @@ public class WorldEditorLoop {
 
 
 //		Light sun = new Light(new Vector3f(0, 10000, -7000), new Vector3f(2, 2, 2)); // light source // light color
-        List<Light> lights = new ArrayList<Light>();
+        List<Light> lights = new ArrayList<>();
 
-        lights.add(new Light(new Vector3f(0, 1000, -7000), new Vector3f(0.4f, 0.4f, 0.4f)));
         lights.add(new Light(new Vector3f(185, 10, -293), new Vector3f(2, 0, 0), new Vector3f(1, 0.01f, 0.002f)));
         lights.add(new Light(new Vector3f(370, 17, -300), new Vector3f(0, 2, 2), new Vector3f(1, 0.01f, 0.002f)));
         lights.add(new Light(new Vector3f(293, 7, -305), new Vector3f(2, 2, 0), new Vector3f(1, 0.01f, 0.002f)));
@@ -174,21 +174,24 @@ public class WorldEditorLoop {
         /* NPCs */
         NPCEngine npcEngine = new NPCEngine();
         //Werewolf
-        Werewolf werewolf = new Werewolf(playerModel,new Vector3f(100, 0, -50), 0, 180, 0, 2.6f);
-        Werewolf werewolf2 = new Werewolf(playerModel,new Vector3f(100, 0, -80), 0, 180, 0, 2.6f);
-        Werewolf werewolf3 = new Werewolf(playerModel,new Vector3f(100, 0, -10), 0, 180, 0, 2.6f);
+        Werewolf werewolf = new Werewolf(playerModel, new Vector3f(100, 0, -50), 0, 180, 0, 2.6f);
+        Werewolf werewolf2 = new Werewolf(playerModel, new Vector3f(100, 0, -80), 0, 180, 0, 2.6f);
+        Werewolf werewolf3 = new Werewolf(playerModel, new Vector3f(100, 0, -10), 0, 180, 0, 2.6f);
         npcEngine.addNpc(werewolf);
         npcEngine.addNpc(werewolf2);
         npcEngine.addNpc(werewolf3);
 
         /* AutoSaver */
         AutoSave autoSave = new AutoSave();
+
         /* GUI */
-        List<GuiTexture> guis = new ArrayList<GuiTexture>();
+        List<GuiTexture> guis = new ArrayList<>();
         GuiTexture gui = new GuiTexture(loader.loadTexture("health"), new Vector2f(-0.7f, -0.85f), new Vector2f(0.20f, 0.25f));
         guis.add(gui);
         GuiRenderer guiRenderer = new GuiRenderer(loader);
 
+        MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
+        Vector3f currentPos = picker.getCurrentRay();
 
         while (!Display.isCloseRequested()) {
             camera.move();
@@ -196,6 +199,21 @@ public class WorldEditorLoop {
             player.move(terrain);
             checkInputs(player);
             renderer.processEntity(player);
+
+            // update mouse picker
+            picker.update();
+            Vector3f terrainPoint = picker.getCurrentTerrainPoint();
+            if (terrainPoint != null) {
+                werewolf.setPosition(terrainPoint);
+            }
+
+            if (currentPos == null || currentPos.getX() != picker.getCurrentRay().getX() || currentPos.getY() != picker.getCurrentRay().getY() ||
+                    currentPos.getZ() != picker.getCurrentRay().getZ()) {
+                // temporary
+                currentPos = picker.getCurrentRay();
+                System.out.println(picker.getCurrentRay());
+            }
+
 
             // NPC movement and entity processing
             npcEngine.getNpcList().forEach(npc -> {
@@ -234,6 +252,9 @@ public class WorldEditorLoop {
             System.out.println("x:" + player.getPosition().x);
             System.out.println("y:" + player.getPosition().y);
             System.out.println("z:" + player.getPosition().z);
+        }
+        if (Mouse.isButtonDown(0)) {
+            System.out.println("hi paul");
         }
 
     }
