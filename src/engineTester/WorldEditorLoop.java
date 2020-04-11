@@ -25,6 +25,7 @@ import textures.ModelTexture;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
 import toolbox.MousePicker;
+import worldEditing.ObjectCreator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -181,6 +182,8 @@ public class WorldEditorLoop {
         npcEngine.addNpc(werewolf2);
         npcEngine.addNpc(werewolf3);
 
+
+
         /* AutoSaver */
         AutoSave autoSave = new AutoSave();
 
@@ -193,6 +196,9 @@ public class WorldEditorLoop {
         MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
         Vector3f currentPos = picker.getCurrentRay();
 
+        /* Object creator*/
+        ObjectCreator objectCreator = new ObjectCreator(loader,picker);
+
         while (!Display.isCloseRequested()) {
             camera.move();
 
@@ -202,10 +208,10 @@ public class WorldEditorLoop {
 
             // update mouse picker
             picker.update();
-            Vector3f terrainPoint = picker.getCurrentTerrainPoint();
-            if (terrainPoint != null) {
-                werewolf.setPosition(terrainPoint);
-            }
+//            Vector3f terrainPoint = picker.getCurrentTerrainPoint();
+//            if (terrainPoint != null) {
+//                werewolf.setPosition(terrainPoint);
+//            }
 
             if (currentPos == null || currentPos.getX() != picker.getCurrentRay().getX() || currentPos.getY() != picker.getCurrentRay().getY() ||
                     currentPos.getZ() != picker.getCurrentRay().getZ()) {
@@ -213,6 +219,12 @@ public class WorldEditorLoop {
                 currentPos = picker.getCurrentRay();
                 System.out.println(picker.getCurrentRay());
             }
+
+            // Start ObjectCreator
+            objectCreator.start();
+            objectCreator.getEntities().forEach(renderer::processEntity);
+            objectCreator.getTempEntities().forEach(renderer::processEntity);
+//            objectCreator.getEntities().forEach(entity -> AutoSave.save(entity));
 
 
             // NPC movement and entity processing
@@ -224,13 +236,11 @@ public class WorldEditorLoop {
 
             autoSave.autoSave(player);
 
+
             renderer.processTerrain(terrain);
             renderer.processTerrain(terrain2);
 
-            for (Entity entity : entities) {
-
-                renderer.processEntity(entity);
-            }
+            entities.forEach(renderer::processEntity);
 
 
             renderer.render(lights, camera);
@@ -253,10 +263,6 @@ public class WorldEditorLoop {
             System.out.println("y:" + player.getPosition().y);
             System.out.println("z:" + player.getPosition().z);
         }
-        if (Mouse.isButtonDown(0)) {
-            System.out.println("hi paul");
-        }
-
     }
 
 
